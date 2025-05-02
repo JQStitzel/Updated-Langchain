@@ -1,4 +1,4 @@
 Playlist:       https://www.youtube.com/playlist?list=PLA1lVIthbM1D5I6r5uY2K89X1KD2w5LNh
-Langchain 1:    https://www.youtube.com/watch?v=AOI7IVE3CMw&list=PLA1lVIthbM1D5I6r5uY2K89X1KD2w5LNh&index=4&pp=iAQB
-Langchain 2:    https://www.youtube.com/watch?v=5CJA1Hbutqc&list=PLA1lVIthbM1D5I6r5uY2K89X1KD2w5LNh&index=5&pp=iAQB
-Langchain 3:    https://www.youtube.com/watch?v=XWB5DXP-DO8&list=PLA1lVIthbM1D5I6r5uY2K89X1KD2w5LNh&index=6&pp=iAQB
+Langchain 1:    https://www.youtube.com/watch?v=AOI7IVE3CMw
+Langchain 2:    https://www.youtube.com/watch?v=5CJA1Hbutqc
+Langchain 3:    https://www.youtube.com/watch?v=XWB5DXP-DO8
