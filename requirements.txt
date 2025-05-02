@@ -1,4 +1,9 @@
 langchain_openai
 langchain_core
+langchain-community
 streamlit
 dotenv
+langserve
+fastapi
+uvicorn
+sse_starlette
