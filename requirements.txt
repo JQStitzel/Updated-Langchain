@@ -2,6 +2,7 @@ langchain_openai
 langchain_core
 langchain-community
 langchain-ollama
+langchainhub
 streamlit
 dotenv
 langserve
@@ -13,3 +14,5 @@ bs4
 pypdf
 chromadb
 faiss-cpu
+arxiv
+wikipedia
