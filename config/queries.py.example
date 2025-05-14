@@ -1,0 +1,11 @@
+class InsuranceQueries:
+    @staticmethod
+    def get_coverage_options_query():
+        return """
+        SELECT  Value
+        FROM    Table
+        WHERE   ([CoverageName] = ? OR [CoverageCode] = ?)
+        AND     [State] = ?
+        AND     [Type] = ?
+        AND     [EffectiveDate] < ?
+        """
