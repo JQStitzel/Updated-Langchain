@@ -19,3 +19,14 @@ arxiv
 wikipedia
 groq
 beautifulsoup4
+
+## Multimodal RAG
+unstructured[all-docs]
+unstructured_inference
+pi_heif
+pillow 
+lxml
+tiktoken
+pdfminer
+pdf2image
+PyMuPDF
