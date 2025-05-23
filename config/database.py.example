@@ -1,0 +1,34 @@
+# from azure.keyvault.secrets import SecretClient
+# from azure.identity import DefaultAzureCredential
+import os
+
+class DatabaseConfig:
+    def __init__(self):
+        # Default values (non-sensitive)
+        self.driver = "{ODBC Driver 17 for SQL Server}"
+        self.database = "DATABASE_NAME"
+        
+        # Load environment specific configuration
+        self.env = os.getenv('ENVIRONMENT', 'development')
+        
+        # For local development, can use .env file
+        if self.env == 'development':
+            self.server = os.getenv('DB_SERVER', 'SERVER_NAME')
+            self.use_trusted_connection = os.getenv('USE_TRUSTED_CONNECTION', 'yes') ## Use pass-through authentication in DEV
+
+        ## TODO: Implement azure key vault storage
+        # else:
+        #     # In production, use Azure Key Vault
+        #     key_vault_name = os.getenv('KEY_VAULT_NAME')
+        #     key_vault_uri = f"https://{key_vault_name}.vault.azure.net/"
+        #     credential = DefaultAzureCredential()
+        #     client = SecretClient(vault_url=key_vault_uri, credential=credential)
+            
+        #     self.server = client.get_secret("db-server").value
+        #     self.use_trusted_connection = client.get_secret("use-trusted-connection").value
+    
+    def get_connection_string(self):
+        return (f"DRIVER={self.driver};"
+                f"SERVER={self.server};"
+                f"DATABASE={self.database};"
+                f"Trusted_Connection={self.use_trusted_connection};")
